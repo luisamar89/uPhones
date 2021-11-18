@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!--Styles-->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!--Font and Icons-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Todos os iPhones</title>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+      <a class="nav-link navbar-brand" aria-current="page" href="index.html">uPhones</a>
+      <button class="navbar-toggler" type="btn" data-toggle="collapse" data-target="nav-bar-responsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">iPhones</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">iPhone 7</a></li>
+              <li><a class="dropdown-item" href="#">iPhone 8</a></li>
+              <li><a class="dropdown-item" href="#">iPhone X</a></li>
+              <li><a class="dropdown-item" href="#">iPhone XS</a></li>
+              <li><a class="dropdown-item" href="#">iPhone 11</a></li>
+              <li><a class="dropdown-item" href="#">iPhone 11 Pro</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item active" href="all-phones.html">Ver todos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Acessórios</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Capas</a></li>
+              <li><a class="dropdown-item" href="#">Peliculas</a></li>
+              <li><a class="dropdown-item" href="#">Carregadores</a></li>
+              <li><a class="dropdown-item" href="#">Fones</a></li>
+              <li><a class="dropdown-item" href="#">Adaptadores</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="all-acessories.html">Ver todos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Peças</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ecrãs</a></li>
+              <li><a class="dropdown-item" href="#">Baterias</a></li>
+              <li><a class="dropdown-item" href="#">Câmaras</a></li>
+              <li><a class="dropdown-item" href="#">Chassis</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Ver todos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reparações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Garantia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Informações</a>
+          </li>
+
+        </ul>
+
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit"><span class="fa fa-search"></span></button>
+        </form>
+
+        <li class="nav-icon"><a href="#"><span class="fa fa-user"></span></a>
+        </li>
+        <li class="nav-icon"><a href="#"><span class="fa fa-globe"></span></a>
+        </li>
+
+      </div>
+
+    </div>
+
+
+  </nav>
+
+  <!--IPHONES SECTION-->
+
+  <!--FILTERS-->
+
+  <section class="display-products-sec">
+    <div class="container-fluid">
+      <div class="row text-center padding">
+        <div class="col-lg-12">
+          <h1 class="text-center">iPhones recondicionados</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 bg">
+          <h4>Filtros</h4>
+          <hr>
+          <h6 class="select">Modelo</h6>
+
+          <!--php-->
+
+          <ul class="list-models">
+            <li id="model-iphone7">
+              <label><input type="checkbox" class="product_check">iPhone 7
+              </label>
+            </li>
+            <li id="model-iphone7plus">
+              <input type="checkbox" class="product_check">iPhone 7 Plus
+            </li>
+            <li id="model-iphone8">
+              <input type="checkbox" class="product_check">iPhone 8
+            </li>
+            <li id="model-iphone8plus">
+              <input type="checkbox" class="product_check">iPhone 8 plus
+            </li>
+            <li id="model-iphonex">
+              <input type="checkbox" class="product_check">iPhone X
+            </li>
+            <li id="model-iphonexs">
+              <input type="checkbox" class="product_check">iPhone XS
+            </li>
+            <li id="model-iphonexr">
+              <input type="checkbox" class="product_check">iPhone XR
+            </li>
+            <li id="model-iphone11">
+              <input type="checkbox" class="product_check">iPhone 11
+            </li>
+            <li id="model-iphone11pro">
+              <input type="checkbox" class="product_check">iPhone 11 pro
+            </li>
+          </ul>
+
+          <h6 class="select">Cor</h6>
+
+          <!--php-->
+
+          <ul class="list-color">
+            <li id="black">
+              <input type="checkbox" class="product_check">Preto
+            </li>
+            <li id="silver">
+              <input type="checkbox" class="product_check">Silver
+            </li>
+            <li id="gold">
+              <input type="checkbox" class="product_check">Gold
+            </li>
+            <li id="rosegold">
+              <input type="checkbox" class="product_check">Rose Gold
+            </li>
+            <li id="blue">
+              <input type="checkbox" class="product_check">Azul
+            </li>
+            <li id="coral">
+              <input type="checkbox" class="product_check">Coral
+            </li>
+            <li id="green">
+              <input type="checkbox" class="product_check">Verde
+            </li>
+            <li id="yellow">
+              <input type="checkbox" class="product_check">Amarelo
+            </li>
+          </ul>
+
+          <h6 class="select">Estado</h6>
+
+          <!--php-->
+
+          <ul class="list-state">
+            <li id="perfeito">
+              <input type="checkbox" class="product_check">Perfeito estado
+            </li>
+            <li id="bom">
+              <input type="checkbox" class="product_check">Bom estado
+            </li>
+            <li id="usado">
+              <input type="checkbox" class="product_check">Usado
+            </li>
+          </ul>
+
+          <h6 class="select">Armazenamento</h6>
+
+          <!--php-->
+
+          <ul class="list-space">
+            <li id="32gb">
+              <input type="checkbox" class="product_check">32gb
+            </li>
+            <li id="64gb">
+              <input type="checkbox" class="product_check">64gb
+            </li>
+            <li id="128gb">
+              <input type="checkbox" class="product_check">128gb
+            </li>
+            <li id="256gb">
+              <input type="checkbox" class="product_check">256gb
+            </li>
+          </ul>
+        </div>
+
+
+      
+        <div class="col-lg-9">
+          <div class="row padding" id="result">
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" id="result-ip7" href="#">
+                <img class="card-img-top" src="./imgs/iphone-7-black-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone 7 black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" id="result-ip8" href="#">
+                <img class="card-img-top" src="./imgs/iphone-8-black-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone 8 black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-x-black-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone X black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-x-silver-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone X silver</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <!--divider-->
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-xr-black-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone XR black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-11pro-black-tras.jpeg">
+                <div class="card-title">
+                  <h5>iPhone 11 pro black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-x-silver-frente.jpeg">
+                <div class="card-title">
+                  <h5>iPhone XS silver</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-2">
+              <a class="card-block stretched-link text-decoration-none" href="#">
+                <img class="card-img-top" src="./imgs/iphone-x-black-frente.jpeg">
+                <div class="card-title">
+                  <h5>iPhone 11 black</h5>
+                  <p class="card-text"></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="container-fluid no-padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h6>Dúvidas e questões?</h6>
+          <hr class="light">
+          <ul>
+            <li><a href="#">Assistência e garantia</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Informações</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-4">
+          <h6>Horário</h6>
+          <hr class="light">
+          <p>Segunda a Sexta: 10h-19h</p>
+          <p>Sábado: 15h-18h</p>
+          <p>Domingo: fechado</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6>Contactos</h6>
+          <hr class="light">
+          <p>Telefone: +351 213 456 765</p>
+          <p>Telemóvel: +351 965 678 876</p>
+          <p>E-mail: contact@iupgradephone.pt</p>
+        </div>
+
+        <div class="copyright">
+          <div class="text-center">
+            © 2021 Copyright: <a href="https://iupgradephone.pt/">iupgradephone.pt</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
